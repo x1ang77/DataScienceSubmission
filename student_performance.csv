@@ -1,0 +1,21 @@
+Student ID,Name,Term,IncomeGroup,NonsenseData,School,Tuisyen,Attendance,BM,BI,Maths,Sejarah,Total
+7,Psy,2,B40,xvxc,SK 8estari,No,60,24,NaN,37,16,77
+8,Edward,2,M40,sf,SK 8estari,Yes,30,43,28,22,34,127
+6,Mei Lin,2,M40,dsf,SK 8estari,Yes,78,0,20,47,63,130
+9,Miyazawa,2,T20,df,SK 8estari,No,100,32,94,33,1,160
+4,Letchumi,2,T20,xvxc,SK 8estari,No,80,97,52,17,11,177
+3,Muthu,2,T20,sf,SK 8estari,Yes,58,31,65,0,82,178
+5,Ah Chong,2,B40,dsf,SK 8estari,Yes,64,16,84,6,94,200
+2,Siti,2,M40,df,SK 8estari,Yes,57,35,68,35,72,210
+1,Ali,2,B40,xvxc,SK 8estari,No,100,16,89,97,97,299
+10,Ah Beng,2,T20,sf,SK 8estari,No,100,43,100,90,92,325
+7,Psy,1,B40,dsf,SK 8estari,No,60,14,-10,27,6,37
+8,Edward,1,M40,df,SK 8estari,Yes,30,33,18,12,24,87
+6,Mei Lin,1,M40,xvxc,SK 8estari,Yes,78,10,10,37,53,110
+9,Miyazawa,1,T20,sf,SK 8estari,No,100,22,84,23,-9,120
+4,Letchumi,1,T20,dsf,SK 8estari,No,80,87,42,7,1,137
+3,Muthu,1,T20,df,SK 8estari,Yes,58,21,55,10,72,158
+5,Ah Chong,1,B40,xvxc,SK 8estari,Yes,64,6,74,4,84,168
+2,Siti,1,M40,sf,SK 8estari,Yes,57,25,58,25,62,170
+1,Ali,1,B40,dsf,SK 8estari,No,100,6,79,87,87,259
+10,Ah Beng,1,T20,df,SK 8estari,No,100,33,90,80,82,285
