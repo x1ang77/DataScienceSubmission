@@ -2,7 +2,6 @@
 import streamlit as st
 import pickle
 import datetime
-import tensorflow as tf
 
 # Load the pre-trained model
 with open('xiang_model.h5', 'rb') as file:
