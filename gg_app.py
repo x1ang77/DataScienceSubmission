@@ -16,8 +16,8 @@ def main():
     # Create input fields for user data
     age = st.slider('Age', 18, 100)
     gender = st.selectbox('Gender', ['Male', 'Female'])
-    caffeine_consumption = st.number_input('Caffeine Consumption (mg)', 0.0, 200.0, 25.0)
-    alcohol_consumption = st.slider('Alcohol Consumption (drinks)', 0.0, 10.0, 0.0)
+    caffeine_consumption = st.number_input('Caffeine Consumption (mg)', 0.0, 200.0, 25.0, step=25.0)
+    alcohol_consumption = st.number_input('Alcohol Consumption (drinks per week)', 0.0, 7.0, 1.0, step= 1.0)
     smoking_status = st.selectbox('Smoking Status', ['Yes', 'No'])
     exercise_frequency = st.slider('Exercise Frequency (days per week)', 0, 7, 3)
     light_sleep = st.slider('Light Sleep', 0, 100)
@@ -43,6 +43,7 @@ def main():
 
     # Convert the hour and minute to a datetime.time object
     wakeup_time = datetime.time(wakeup_hour, wakeup_minute)
+    st.write(f'Selected Wakeup Time: {bedtime}')
     wakeup_time_hour = wakeup_time.hour + wakeup_time.minute / 60
 
     gender_numeric = 0 if gender == 'Male' else 1
@@ -58,7 +59,7 @@ def main():
     if st.button("Predict"):
         prediction = classifier.predict([[age, gender_numeric, caffeine_consumption, alcohol_consumption,
                                       smoking_status_numeric, exercise_frequency, bedtime_hour, wakeup_time_hour, light_sleep, rem_sleep, deep_sleep, awakenings, sleep_duration]])[0]
-        st.success('The song is a {}'.format(prediction))
+        st.success('Predicted sleep efficiency: {}'.format(prediction))
 
     # Ensure the predicted sleep efficiency is between 3 and 100
 #     prediction = max(3, min(prediction, 100))
